@@ -10,3 +10,28 @@ th {
 	background-color: #4CAF50;
 	color: white;
   }
+
+  .vl {
+	border-left: 6px solid green;
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	margin-left: -3px;
+	top: 0;
+  }
+
+  .divider-1 {
+	border-bottom: 1px solid rgb(6, 153, 55);
+	background-color: rgb(6, 153, 55);
+	height: 1px;
+	margin: 0.5em 0px 1.5em;
+	text-align: center;
+}
+
+.divider-1 span {
+	display: block;
+	width: 50px;
+	height: 2px;
+	text-align: center;
+}
+
