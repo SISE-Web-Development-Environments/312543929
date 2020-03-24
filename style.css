@@ -106,6 +106,10 @@ ul {
 	resize: none;
   }
 
+  input[type=submit]:hover{
+	background-color: rgb(12, 145, 103);
+  }
+
   .square {
 	width: 200px;
 	height: 200px;
@@ -137,6 +141,8 @@ ul {
     left: 0;
     bottom: 0; 
 }
+
+
 
 
 
