@@ -3,7 +3,10 @@
 	position: fixed;
 	width: 100%;
 	height: 35px;
-	background: white;
+}
+
+body{
+	background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 th {
@@ -42,6 +45,7 @@ a.btn{
 	padding: 8px 20px;
 	border-radius: 27px;
 	margin: 0, 15px;
+	
 }
 
 .light{
@@ -126,7 +130,7 @@ ul {
   .square.-one {
 	animation: rotate 9000ms infinite linear;
 	opacity: .4;
-	background: rgb(255, 255, 255);
+	background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   }
 
   @keyframes rotate {
@@ -141,6 +145,8 @@ ul {
     left: 0;
     bottom: 0; 
 }
+
+
 
 
 
