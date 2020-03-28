@@ -228,13 +228,15 @@
 <br/>
 <div class="box">
 <div class="contact-form">
-  <form action="mailto:seinfeld@post.bgu.ac.il" method="post" enctype="text/plain">
+  <form action="mailto:seinfeld@post.bgu.ac.il?subject=subject_mail&body=body_mail" method="get" enctype="text/plain">
     <label  for="fname" style="font-family: Arial, Helvetica, sans-serif;">Email</label><br>
-    <input type="text" id="fname" name="FullName" placeholder="Please fill your Email address.."><br>
-    <label for="subject" style="font-family: Arial, Helvetica, sans-serif;">Subject</label><br>
-    <textarea id="subject" style="font-family: Arial, Helvetica, sans-serif" name="subject" placeholder="Please enter your comment here.." style="height:100"></textarea><br>
+    <input type="text" id="toWho" name="toWho" placeholder="Please fill your Email address.."><br>
+    <label  for="subject" style="font-family: Arial, Helvetica, sans-serif;">Subject</label><br>
+    <input type="text" id="subject_mail" name="subject" placeholder="Please fill your subject"><br> 
+    <label for="toWho" style="font-family: Arial, Helvetica, sans-serif;">Email body</label><br>
+    <textarea id="body_mail" style="font-family: Arial, Helvetica, sans-serif" name="body" placeholder="Please enter your comment here.." style="height:100"></textarea><br>
     <label  for="feeling" style="font-family: Arial, Helvetica, sans-serif;">Your Feeling</label><br>
-    <select name = "feeling" id="Emoji" placeholder="Choose Emoji">
+    <select name = "feeling" id="Emoji" placeholder="Choose Emoji" onchange="onClick(value)">
       <option selected>&#128540</option selected>
       <option>&#128512</option>
       <option>&#128513</option>
@@ -264,7 +266,8 @@
     </optgroup>
     </select>
     <br>
-    <input type="submit" value="Submit" class="btn submit">
+    <button type="reset" value="reset" class="btn submit">Reset</button>
+    <button type="submit" value="Submit" class="btn submit">Submit</button>
   </form>
 </div>
 <br/>
@@ -289,5 +292,12 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+<script>
+  function onClick(value){
+    document.getElementById("body_mail").value+=value;
+  }
+</script>
+
 </body>
 </html>
