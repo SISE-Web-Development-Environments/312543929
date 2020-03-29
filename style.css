@@ -112,7 +112,7 @@ ul {
 	resize: none;
   }
 
-  input[type=submit]:hover{
+  button:hover{
 	background-color: rgb(12, 145, 103);
   }
 
